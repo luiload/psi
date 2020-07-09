@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" >
+		<title> PSI GILIE </title>
+		<meta name="author" content="C074114">
+		
+		<link rel="stylesheet" href="libs/css/jquery.dataTables.min.css">
+		<link rel="stylesheet" href="libs/css/bootstrap.css">
+		<link rel="stylesheet" href="css/estilo.css">
+
+		<script src="libs/js/jquery-3.3.1.min.js"></script>
+		<script src="libs/js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+		<script type="text/javascript" src="js/charts.js"></script>
+	</head>
+	<body onload="inicio();">
+		<header>
+			<nav class="navbar navbar-expand-lg cor-padrao">
+				<div class="mr-auto">    
+					<a class="navbar-brand" href="index.php">
+					</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#" id="carregar_dados" role="button" aria-haspopup="true" aria-expanded="false" onclick="carrega();">
+								Carregar Dados
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" id="carregar_dados" role="button" aria-haspopup="true" aria-expanded="false" onclick="javascript:ocultar('qtde'); carrega_graf('qtde');">
+								Carregar Gráfico Qtde
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" id="carregar_dados" role="button" aria-haspopup="true" aria-expanded="false" onclick="javascript:ocultar('vlr'); carrega_graf('vlr');">
+								Carregar Gráfico Valor
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div id='tot_carrega'>0</div>
+		
+		<div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+	</body>
+</html>

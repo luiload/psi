@@ -1,0 +1,23 @@
+/*======RESET======*/
+* {margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box; font-family: 'Lato', sans-serif;}
+body {background-color: #fff; display: block;}
+a {text-decoration: none;cursor: pointer; opacity: 1;}
+a:hover {opacity: 1.2;}
+ul {list-style: none;}
+img {width: 100%;}
+
+html, body {height:100%;}
+
+/*--- HEADER E FOOTER ---*/
+.cor-padrao{	
+	background-image: linear-gradient(to right,#0059b3,	#63b8ab);	
+	color: white;		
+}
+.cor-padrao a{
+	color: white;
+}
+.cor-padrao a:hover{
+	color: orange;
+}
+
+
